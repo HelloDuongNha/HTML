@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DONT LET QUAN SEE THIS</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            background-image: url('background.jpg'); 
+            background-size: auto;
+            background-repeat: no-repeat; 
+            background-position: center;
+        }
+        .container {
+            position: relative; 
+        }
+
+        .layer {
+            position: absolute; 
+            cursor: pointer;
+        }
+        #lmao {
+            top: -216px;
+            left: -169px; 
+            width: 350px; 
+            z-index: 1;
+        }
+        #layer1 {
+            top: -245px; 
+            left: -600px;
+            width: 267px;
+        }
+        #layer2 {
+            top: -329px;
+            left: -360px;
+            width: 255px;
+        }
+        #layer3 {
+            top: -290px;
+            left: -117px;
+            width: 305px;
+        }
+        #layer4 {
+            top: -290px;
+            left: 150px;
+            width: 247px; 
+        }
+        #layer5 {
+            top: -338px;
+            left: 380px;
+            width: 220px; 
+        }
+
+        .message {
+            position: absolute;
+            background-color: white;
+            padding: 10px;
+            width: 200px;
+            border: 2px solid black;
+            border-radius: 5px;
+            font-size: 25px;
+            opacity: 0; 
+            pointer-events: none; 
+            transition: opacity 0.3s ease; 
+            z-index: 1000;
+        }
+        #message {
+            top: 100px;
+            right: -150px;
+            width: 300px;
+        } 
+        #message1 {
+            top: -50px;
+            right: 400px;
+        } 
+        #message2 {
+            top: -150px;
+            right: 120px;
+        } 
+        #message3 {
+            top: -170px;
+            right: -140px;
+        } 
+        #message4 {
+            top: -150px;
+            right: -380px;
+        } 
+        #message5 {
+            top: -200px;
+            right: -600px;
+        } 
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img id="lmao"   class = 'layer' src="lmao.png" alt="lmao">
+        <img id="layer1" class = 'layer' src="Layer 1.png" alt="layer1">
+        <img id="layer2" class = 'layer' src="Layer 2.png" alt="layer2">
+        <img id="layer3" class = 'layer' src="Layer 3.png" alt="layer3">
+        <img id="layer4" class = 'layer' src="Layer 4.png" alt="layer4">
+        <img id="layer5" class = 'layer' src="Layer 5.png" alt="layer5">
+
+        <div id="message" class="message"></div>
+        <div id="message1" class="message"></div>
+        <div id="message2" class="message"></div>
+        <div id="message3" class="message"></div>
+        <div id="message4" class="message"></div>
+        <div id="message5" class="message"></div>
+    </div>
+    <script>
+        const lmao = document.getElementById('lmao');
+        const layer1 = document.getElementById('layer1');
+        const layer2 = document.getElementById('layer2');
+        const layer3 = document.getElementById('layer3');
+        const layer4 = document.getElementById('layer4');
+        const layer5 = document.getElementById('layer5');
+
+        const message = document.getElementById('message');
+        const message1 = document.getElementById('message1');
+        const message2 = document.getElementById('message2');
+        const message3 = document.getElementById('message3');
+        const message4 = document.getElementById('message4');
+        const message5 = document.getElementById('message5');
+
+        let hoverCount = 0;
+        lmao.addEventListener('mouseenter', () => {
+            message.style.opacity = 1;
+            hoverCount++;
+            message.textContent = `hehehe I harvest 5 bananas in today, I can't wait to tell my crushes (Jenny, Ruby, J97,...) x${hoverCount}`;
+        });
+
+        lmao.addEventListener('mouseleave', () => {
+            message.style.opacity = 0;
+            message.style.pointerEvents = 'none';
+        });
+
+        let hoverCount1 = 0;
+        layer1.addEventListener('mouseenter', () => {
+            message1.style.opacity = 1;
+            hoverCount1++;
+            message1.textContent = `aw, What a mlem cuti kid x${hoverCount1}`;
+        });
+
+        layer1.addEventListener('mouseleave', () => {
+            message1.style.opacity = 0;
+            message1.style.pointerEvents = 'none';
+        });
+
+        let hoverCount2 = 0;
+        layer2.addEventListener('mouseenter', () => {
+            message2.style.opacity = 1;
+            hoverCount2++;
+            message2.textContent = `No more Jenny, Just you and us tonight x${hoverCount2}`;
+        });
+
+        layer2.addEventListener('mouseleave', () => {
+            message2.style.opacity = 0;
+            message2.style.pointerEvents = 'none';
+        });
+
+        let hoverCount3 = 0;
+        layer3.addEventListener('mouseenter', () => {
+            message3.style.opacity = 1;
+            hoverCount3++;
+            message3.textContent = `You belong to me tonight bae x${hoverCount3}`;
+        });
+
+        layer3.addEventListener('mouseleave', () => {
+            message3.style.opacity = 0;
+            message3.style.pointerEvents = 'none';
+        });
+
+        let hoverCount4 = 0;
+        layer4.addEventListener('mouseenter', () => {
+            message4.style.opacity = 1;
+            hoverCount4++;
+            message4.textContent = `We will take your first time sweat heart x${hoverCount4}`;
+        });
+
+        layer4.addEventListener('mouseleave', () => {
+            message4.style.opacity = 0;
+            message4.style.pointerEvents = 'none';
+        });
+
+        let hoverCount5 = 0;
+        layer5.addEventListener('mouseenter', () => {
+            message5.style.opacity = 1;
+            hoverCount5++;
+            message5.textContent = `Prepare to die...in bed x${hoverCount5}`;
+        });
+
+        layer5.addEventListener('mouseleave', () => {
+            message5.style.opacity = 0;
+            message5.style.pointerEvents = 'none';
+        });
+    </script>
+</body>
+</html>
